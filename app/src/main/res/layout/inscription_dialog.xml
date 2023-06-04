@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:id="@+id/annuler_dialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rounded_corner"
+        android:padding="2dp"/>
+
+    <ImageView
+        android:id="@+id/icone_inscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_verified_user"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/texte_inscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inscriez-vous en tant que"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icone_inscription"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/patient_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Patient"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/prestataire_btn"
+        app:layout_constraintTop_toBottomOf="@+id/texte_inscription"/>
+
+    <Button
+        android:id="@+id/prestataire_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Prestataire"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toRightOf="@id/patient_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texte_inscription"
+        android:layout_marginLeft="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

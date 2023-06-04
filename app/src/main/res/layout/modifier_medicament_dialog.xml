@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:id="@+id/texte_modif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Modifier les détails du médicament"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/modifNomMédicament"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texte_modif"
+        android:hint="Nom du médicamnet"
+        app:hintTextColor="@color/purple_200"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/purple_200"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/purple_200">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cursorVisible="@color/purple_200"
+            android:inputType="textPersonName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/modifCode"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/modifNomMédicament"
+        android:hint="Code du médicament"
+        app:hintTextColor="@color/purple_200"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/purple_200"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/purple_200">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cursorVisible="@color/purple_200"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/modifPrix"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/modifCode"
+        android:hint="Prix"
+        app:hintTextColor="@color/purple_200"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/purple_200"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/purple_200">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cursorVisible="@color/purple_200"
+            android:inputType="textPersonName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/modifQuantité"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/modifPrix"
+        android:hint="Quantité du médicamnet"
+        app:hintTextColor="@color/purple_200"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/purple_200"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/purple_200">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cursorVisible="@color/purple_200"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/modifDate_de_fabrication"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/modifQuantité"
+        android:hint="Date de fabrication"
+        app:hintTextColor="@color/purple_200"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/purple_200"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/purple_200">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cursorVisible="@color/purple_200"
+            android:inputType="date"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/modifDate_dexpiration"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/modifDate_de_fabrication"
+        android:hint="Date d'expiration"
+        app:hintTextColor="@color/purple_200"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/purple_200"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/purple_200">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cursorVisible="@color/purple_200"
+            android:inputType="date"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/modif_annuler_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Annuler"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/modif_confirmer_btn"
+        app:layout_constraintTop_toBottomOf="@+id/modifDate_dexpiration"/>
+
+    <Button
+        android:id="@+id/modif_confirmer_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Confirmer"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toRightOf="@id/modif_annuler_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modifDate_dexpiration"
+        android:layout_marginLeft="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

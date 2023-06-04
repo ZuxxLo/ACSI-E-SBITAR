@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="15dp">
+
+    <ImageView
+        android:id="@+id/annuler_det_dialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rounded_corner"
+        android:padding="2dp"/>
+
+    <ImageView
+        android:id="@+id/icone_inscription"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/ic_baseline_health_and_safety_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp"
+        app:tint="@color/purple_200" />
+
+
+
+    <TextView
+        android:id="@+id/det_nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom du médicament :"
+        android:textSize="15dp"
+        android:gravity="left"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icone_inscription"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/det_nom_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom du médicament"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/det_nom"
+        app:layout_constraintTop_toBottomOf="@id/icone_inscription"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/det_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code du médicament :"
+        android:textSize="15dp"
+        android:gravity="left"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/det_nom"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/det_code_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code du médicament"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/det_code"
+        app:layout_constraintTop_toBottomOf="@id/det_nom_val"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/det_prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prix :"
+        android:textSize="15dp"
+        android:gravity="left"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/det_code"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/det_prix_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prix"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/det_prix"
+        app:layout_constraintTop_toBottomOf="@id/det_code_val"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/det_quant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantité disponible :"
+        android:textSize="15dp"
+        android:gravity="left"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/det_prix"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/det_quant_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantité"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/det_quant"
+        app:layout_constraintTop_toBottomOf="@id/det_prix_val"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/det_date_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date de fabrication :"
+        android:textSize="15dp"
+        android:gravity="left"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/det_quant"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/det_date_fab_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date de fabrication"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/det_date_fab"
+        app:layout_constraintTop_toBottomOf="@id/det_quant_val"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/det_date_exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date d'expiration :"
+        android:textSize="15dp"
+        android:gravity="left"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/det_date_fab"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/det_date_exp_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date d'expiration"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/det_date_exp"
+        app:layout_constraintTop_toBottomOf="@id/det_date_fab_val"
+        android:padding="5dp"/>
+
+
+    <Button
+        android:id="@+id/commander_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ajouter au panier"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/det_date_exp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

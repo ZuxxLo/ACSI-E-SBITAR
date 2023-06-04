@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffff"
+        android:padding="10dp"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/card">
+
+            <TextView
+                android:id="@+id/etat_cmdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Etat de la commande"
+                android:textColor="#1C1C1C"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/code_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etat_cmdd"
+                android:layout_marginLeft="20dp"
+                android:text="Code :"
+                android:textSize="15dp"
+                android:textColor="#707070" />
+
+            <TextView
+                android:id="@+id/code_cmdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/code_txt"
+                android:layout_below="@id/etat_cmdd"
+                android:text="ID de la commande"
+                android:textSize="15dp"
+                android:layout_marginLeft="7dp"
+                android:textColor="#707070" />
+
+            <TextView
+                android:id="@+id/client_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/code_txt"
+                android:layout_marginLeft="20dp"
+                android:text="Lancée par :"
+                android:textSize="15dp"
+                android:textColor="#707070" />
+
+            <TextView
+                android:id="@+id/patient_cmdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/code_cmdd"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/client_txt"
+                android:text="patient"
+                android:textSize="15dp"
+                android:textColor="#707070" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffff"
+        android:padding="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="left"
+            android:id="@+id/card">
+
+            <ImageView
+                android:id="@+id/image_med"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_baseline_health_and_safety_24"
+                android:backgroundTint="@color/purple_200" />
+
+            <TextView
+                android:id="@+id/nom_medd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/image_med"
+                android:text="Nom de médicament"
+                android:textColor="#1C1C1C"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/prix_medd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nom_medd"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/image_med"
+                android:text="Prix"
+                android:textSize="15dp"
+                android:textColor="#707070" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/prix_medd"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/image_med"
+                android:text="Quantité :"
+                android:textSize="15dp"
+                android:textColor="#00ffffff" />
+
+            <TextView
+                android:id="@+id/quantité_medd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/prix_medd"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/quantité_txt"
+                android:text="quantité"
+                android:textSize="15dp"
+                android:textColor="#00ffffff" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/retirer_signe"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/close_sign"/>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

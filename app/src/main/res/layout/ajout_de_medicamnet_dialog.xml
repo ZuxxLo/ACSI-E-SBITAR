@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="15dp">
+
+    <ImageView
+        android:id="@+id/icone_inscription"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/ic_baseline_medical_services_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp"
+        app:tint="@color/purple_200" />
+
+    <TextView
+        android:id="@+id/texte_ajout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter un médicament"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icone_inscription"
+        android:padding="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nom_med"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texte_ajout"
+        android:hint="Nom du médicamnet"
+        app:hintTextColor="@color/purple_200"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/purple_200"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/purple_200">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cursorVisible="@color/purple_200"
+            android:inputType="textPersonName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/code_med"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nom_med"
+        android:hint="Code du médicament"
+        app:hintTextColor="@color/purple_200"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/purple_200"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/purple_200">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cursorVisible="@color/purple_200"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/prix_med"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/code_med"
+        android:hint="Prix"
+        app:hintTextColor="@color/purple_200"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/purple_200"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/purple_200">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cursorVisible="@color/purple_200"
+            android:inputType="textPersonName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/quantité_med"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prix_med"
+        android:hint="Quantité du médicamnet"
+        app:hintTextColor="@color/purple_200"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/purple_200"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/purple_200">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cursorVisible="@color/purple_200"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/date_fab"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quantité_med"
+        android:hint="Date de fabrication"
+        app:hintTextColor="@color/purple_200"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/purple_200"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/purple_200">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cursorVisible="@color/purple_200"
+            android:inputType="date"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/date_exp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_fab"
+        android:hint="Date d'expiration"
+        app:hintTextColor="@color/purple_200"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/purple_200"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/purple_200">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cursorVisible="@color/purple_200"
+            android:inputType="date"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/annuler_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Annuler"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/confirmer_btn"
+        app:layout_constraintTop_toBottomOf="@+id/date_exp"/>
+
+    <Button
+        android:id="@+id/confirmer_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Confirmer"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toRightOf="@id/annuler_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_exp"
+        android:layout_marginLeft="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

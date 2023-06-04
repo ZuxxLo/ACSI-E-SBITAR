@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:paddingTop="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:id="@+id/nom_medd"
+        android:text="Nom"
+        android:textSize="15dp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:textAllCaps="false"
+        app:layout_constraintRight_toLeftOf="@id/prix_medd"/>
+
+    <TextView
+        android:id="@+id/prix_medd"
+        android:text="Prix"
+        android:textSize="15dp"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@id/nom_medd"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        app:layout_constraintRight_toLeftOf="@id/quantité_medd"/>
+
+    <TextView
+        android:id="@+id/quantité_medd"
+        android:text="Quantité"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@id/prix_medd"
+        android:padding="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
